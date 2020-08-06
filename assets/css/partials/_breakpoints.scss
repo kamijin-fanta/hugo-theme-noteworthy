@@ -6,7 +6,7 @@
 
 @include media(900px) {
     // TOP NAV
-    nav {
+    nav#top-nav {
         position: fixed;
         overflow: auto;
         height: 100%;

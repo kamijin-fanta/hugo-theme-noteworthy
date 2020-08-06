@@ -5,6 +5,11 @@
     <time>{{ .Date.Format "January 2, 2006" }}</time>
     {{ end }}
     <div>
+        {{- if .Site.Params.toc -}}
+            {{ .TableOfContents }}
+        {{- end -}}
+    </div>
+    <div>
         <p>
         {{ .Content }}
         </p>
